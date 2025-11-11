@@ -1,6 +1,5 @@
 artifacts_root: artifacts
 
-
 data_ingestion:
   root_dir: artifacts/data_ingestion
   source_URL: https://drive.google.com/file/d/1zc-wA-zeQ_EEblpoJfOCX6HlOeomsbaW/view?usp=drive_link
@@ -12,3 +11,6 @@ prepare_base_model:
   base_model_path: artifacts/prepare_base_model/base_model.h5
   updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
 
+training:
+  root_dir: artifacts/training
+  trained_model_path: artifacts/training/model.h5

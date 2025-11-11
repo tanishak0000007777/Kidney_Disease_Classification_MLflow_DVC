@@ -65,22 +65,17 @@ open up you local host and port
 ### dagshub
 [dagshub](https://dagshub.com/)
 
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
+import dagshub
+dagshub.init(repo_owner='tanishak0000007777',
+             repo_name='Kidney_Disease_Classification_MLflow_DVC',
+             mlflow=True)
 
-Run this to export as env variables:
+import mlflow
+print("✅ Connected to DagsHub successfully!")
 
-```bash
 
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
 
-export MLFLOW_TRACKING_USERNAME=entbappy 
 
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
-
-```
 
 
 ### DVC cmd
